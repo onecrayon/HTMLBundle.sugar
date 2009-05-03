@@ -7,7 +7,7 @@
 		<text-trigger>base</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -23,11 +23,11 @@
 		<text-trigger>body</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
-					<string><![CDATA[<body${1: id="${2:${E_FILENAME/(.*)\..*/\L$2/}}"${3: onload="$4"}}>
+					<string><![CDATA[<body${1: id="$2"${3: onload="$4"}}>
 	$0
 </body>]]></string>
 				</dict>
@@ -37,11 +37,11 @@
 	
 	<action id="com.onecrayon.Snippets.div" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
-		<title>div</title>
+		<title>Div</title>
 		<text-trigger>div</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -59,7 +59,7 @@
 		<text-trigger>movie</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -81,15 +81,15 @@
 	
 	<action id="com.onecrayon.Snippets.form" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
-		<title>form</title>
+		<title>Form</title>
 		<text-trigger>form</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
-					<string><![CDATA[<form action="${1:${E_FILENAME/(.*?)\..*/$1_submit/}}" method="${2:get}" accept-charset="utf-8">
+					<string><![CDATA[<form action="$1" method="${2:get}" accept-charset="utf-8">
 	$0
 
 	<p><input type="submit" value="Continue &rarr;"$E_XHTML></p>
@@ -105,15 +105,15 @@
 		<text-trigger>head</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
 					<string><![CDATA[<head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"$E_XHTML>
-	<title>${1:${E_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}</title>
-	$0
-</head>]]></string>
+	<title>$1</title>
+	$2
+</head>$0]]></string>
 				</dict>
 			</options>
 		</setup>
@@ -125,7 +125,7 @@
 		<text-trigger>h1</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -141,7 +141,7 @@
 		<text-trigger>input</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -157,7 +157,7 @@
 		<text-trigger>link</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -173,7 +173,7 @@
 		<text-trigger>mailto</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -189,7 +189,7 @@
 		<text-trigger>meta</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -205,7 +205,7 @@
 		<text-trigger>refresh</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -221,7 +221,7 @@
 		<text-trigger>script</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -237,7 +237,7 @@
 		<text-trigger>style</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -255,7 +255,7 @@
 		<text-trigger>table</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -274,7 +274,7 @@
 		<text-trigger>textarea</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
@@ -290,11 +290,11 @@
 		<text-trigger>title</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
-			<syntax-context>html</syntax-context>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
-					<string><![CDATA[<title>${1:${E_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}</title>]]></string>
+					<string><![CDATA[<title>${1:Page Title}</title>]]></string>
 				</dict>
 			</options>
 		</setup>
