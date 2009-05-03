@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<action-recipes>
+
+	<action id="com.onecrayon.Snippets.base" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Base</title>
+		<text-trigger>base</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<base href="$1"${2: target="$3"}$E_XHTML>$0]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.body" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Body</title>
+		<text-trigger>body</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<body${1: id="${2:${E_FILENAME/(.*)\..*/\L$2/}}"${3: onload="$4"}}>
+	$0
+</body>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.div" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>div</title>
+		<text-trigger>div</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<div${1: id="${2:name}"}>
+	${0:$SELECTED_TEXT}
+</div>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.movie" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Embed QT Movie</title>
+		<text-trigger>movie</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+	<param name="src" value="$1"$E_XHTML>
+	<param name="controller" value="$4"$E_XHTML>
+	<param name="autoplay" value="$5"$E_XHTML>
+	<embed src="${1:movie.mov}"
+		width="${2:320}" height="${3:240}"
+		controller="${4:true}" autoplay="${5:true}"
+		scale="tofit" cache="true"
+		pluginspage="http://www.apple.com/quicktime/download/"
+	$E_XHTML>
+</object>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.form" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>form</title>
+		<text-trigger>form</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<form action="${1:${E_FILENAME/(.*?)\..*/$1_submit/}}" method="${2:get}" accept-charset="utf-8">
+	$0
+
+	<p><input type="submit" value="Continue &rarr;"$E_XHTML></p>
+</form>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.head" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Head</title>
+		<text-trigger>head</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"$E_XHTML>
+	<title>${1:${E_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}</title>
+	$0
+</head>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.heading" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Heading</title>
+		<text-trigger>h1</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<h1 id="${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}">${1:$SELECTED_TEXT}</h1>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.Input" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Input</title>
+		<text-trigger>input</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3"${4: id="${5:$2}"}$E_XHTML>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.link" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Link</title>
+		<text-trigger>link</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}"${4: title="${5:no title}"} charset="${5:utf-8}"$E_XHTML>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.mail_anchor" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Mail Anchor</title>
+		<text-trigger>mailto</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>$0]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.meta" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Meta</title>
+		<text-trigger>meta</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<meta name="${1:name}" content="${2:content}"$E_XHTML>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.refresh" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Meta Refresh</title>
+		<text-trigger>refresh</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<meta http-equiv="refresh" content="0; url=$1"$TM_XHTML>$0]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.script" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Script</title>
+		<text-trigger>script</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<script type="text/javascript" charset="utf-8"${1: src="$2"}>$0</script>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.style" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Style</title>
+		<text-trigger>style</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<style type="text/css" media="screen">
+	$0
+</style>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.table" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Table</title>
+		<text-trigger>table</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<table border="${1:0}"${2: cellspacing="${3:5}" cellpadding="${4:5}"}>
+	<tr><th>${5:Header}</th></tr>
+	<tr><td>${0:Data}</td></tr>
+</table>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.textarea" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Textarea</title>
+		<text-trigger>textarea</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<textarea name="${1:name}" rows="${2:8}" cols="${3:40}">$0</textarea>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.title" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Title</title>
+		<text-trigger>title</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<title>${1:${E_FILENAME/((.+)\..*)?/(?2:$2:Page Title)/}}</title>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+</action-recipes>
