@@ -161,7 +161,7 @@
 			<options>
 				<dict>
 					<key>default</key>
-					<string><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}"${4: title="${5:no title}"} charset="${5:utf-8}"$E_XHTML>]]></string>
+					<string><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}"${4: title="${5:no title}"} charset="${6:utf-8}"$E_XHTML>]]></string>
 				</dict>
 			</options>
 		</setup>
