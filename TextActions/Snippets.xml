@@ -35,6 +35,22 @@
 		</setup>
 	</action>
 	
+	<action id="com.onecrayon.Snippets.button" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Button</title>
+		<text-trigger>button</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<button${1: type="${2:submit/reset/button}"}>$0</button>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
 	<action id="com.onecrayon.Snippets.div" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Div</title>
