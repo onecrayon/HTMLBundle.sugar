@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <action-recipes>
 
-	<action id="com.onecrayon.Snippets.base" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.base" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Base</title>
 		<text-trigger>base</text-trigger>
@@ -17,7 +17,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.body" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.body" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Body</title>
 		<text-trigger>body</text-trigger>
@@ -35,7 +35,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.button" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.button" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Button</title>
 		<text-trigger>button</text-trigger>
@@ -51,7 +51,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.div" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.div" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Div</title>
 		<text-trigger>div</text-trigger>
@@ -69,7 +69,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.movie" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.movie" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Embed QT Movie</title>
 		<text-trigger>movie</text-trigger>
@@ -95,7 +95,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.form" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.form" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Form</title>
 		<text-trigger>form</text-trigger>
@@ -115,7 +115,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.head" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.head" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Head</title>
 		<text-trigger>head</text-trigger>
@@ -135,7 +135,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.heading" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.heading" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Heading</title>
 		<text-trigger>h1</text-trigger>
@@ -151,7 +151,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.Input" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.Input" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Input</title>
 		<text-trigger>input</text-trigger>
@@ -167,7 +167,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.link" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.link" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Link</title>
 		<text-trigger>link</text-trigger>
@@ -183,7 +183,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.mail_anchor" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.mail_anchor" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Mail Anchor</title>
 		<text-trigger>mailto</text-trigger>
@@ -199,7 +199,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.meta" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.meta" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Meta</title>
 		<text-trigger>meta</text-trigger>
@@ -215,7 +215,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.refresh" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.refresh" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Meta Refresh</title>
 		<text-trigger>refresh</text-trigger>
@@ -231,7 +231,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.script" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.script" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Script</title>
 		<text-trigger>script</text-trigger>
@@ -247,7 +247,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.style" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.style" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Style</title>
 		<text-trigger>style</text-trigger>
@@ -265,7 +265,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.table" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.table" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Table</title>
 		<text-trigger>table</text-trigger>
@@ -284,7 +284,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.textarea" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.textarea" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Textarea</title>
 		<text-trigger>textarea</text-trigger>
@@ -300,7 +300,7 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.title" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.title" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Title</title>
 		<text-trigger>title</text-trigger>
