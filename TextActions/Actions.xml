@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<action-recipes>
+	
+	<action id="com.onecrayon.TextActions.EncryptROT13" category="actions.text.HTML/tea.insertion">
+		<class>TEALoader</class>
+		<title>Encrypt Selection Or Line (ROT 13)</title>
+		<setup>
+			<script>encrypt_selection.rb</script>
+			<input>selection</input>
+			<alternate>line</alternate>
+			<output>text</output>
+		</setup>
+	</action>
+	
+</action-recipes>
