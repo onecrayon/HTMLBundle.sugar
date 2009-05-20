@@ -23,4 +23,26 @@
 		</setup>
 	</action>
 	
+	<action id="com.onecrayon.TextActions.URLEscape" category="actions.text.HTML/tea.conversion">
+		<class>TEALoader</class>
+		<title>URL Escape Selection / Line</title>
+		<setup>
+			<script>url_escape.rb</script>
+			<input>selection</input>
+			<alternate>line</alternate>
+			<output>text</output>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.TextActions.URLUnescape" category="actions.text.HTML/tea.conversion">
+		<class>TEALoader</class>
+		<title>URL Unescape Selection / Line</title>
+		<setup>
+			<script>url_unescape.rb</script>
+			<input>selection</input>
+			<alternate>line</alternate>
+			<output>text</output>
+		</setup>
+	</action>
+	
 </action-recipes>
