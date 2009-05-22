@@ -49,6 +49,23 @@
 		</setup>
 	</action>
 	
+	<action id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
+		<class>TEAforEspresso</class>
+		<title>Wrap In &lt?= ... ?></title>
+		<setup>
+			<action>insert_snippet</action>
+			<options>
+			    <dict>
+			        <key>default</key>
+			        <string>&lt;?= $SELECTED_TEXT ?></string>
+			        
+			        <key>undo_name</key>
+			        <string>Wrap In PHP Echo</string>
+			    </dict>
+			</options>
+		</setup>
+	</action>
+	
 	<action id="com.onecrayon.TextActions.StripHTML" category="actions.text.HTML/tea.footer">
 		<class>TEALoader</class>
 		<title>Strip HTML From Document / Selection</title>
