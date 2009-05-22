@@ -151,6 +151,22 @@
 		</setup>
 	</action>
 	
+	<action id="com.onecrayon.Snippets.HTML.iframe" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Iframe</title>
+		<text-trigger>iframe</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<iframe src="$1"${2: frameborder="0"}>$3</iframe>$0]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
 	<action id="com.onecrayon.Snippets.HTML.Input" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
 		<title>Input</title>
