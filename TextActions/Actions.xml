@@ -51,7 +51,7 @@
 	
 	<action id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
 		<class>TEAforEspresso</class>
-		<title>Wrap In &lt?= ... ?></title>
+		<title>Wrap In &lt;?= ... ?></title>
 		<setup>
 			<action>insert_snippet</action>
 			<options>
