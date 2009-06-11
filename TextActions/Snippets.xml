@@ -203,18 +203,33 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.Snippets.HTML.labelWithInput" category="actions.text.HTML/actions.snippets">
+	<action id="com.onecrayon.Snippets.HTML.Input" category="actions.text.HTML/actions.snippets">
 		<class>TEAforEspresso</class>
-		<title>Label With Input</title>
-		<text-trigger>label</text-trigger>
+		<title>Input</title>
+		<text-trigger>input</text-trigger>
 		<setup>
 			<action>insert_snippet</action>
 			<syntax-context>html, html punctuation.definition.begin</syntax-context>
 			<options>
 				<dict>
 					<key>default</key>
-					<string><![CDATA[<label for="${2:${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}}">$1</label>
-<input type="${3:text/submit/hidden/button}" name="${4:$2}" value="$5"${6: id="${7:$2}"}$E_XHTML>]]></string>
+					<string><![CDATA[<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3"${4: id="${5:$2}"}$E_XHTML>]]></string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.Snippets.HTML.Image" category="actions.text.HTML/actions.snippets">
+		<class>TEAforEspresso</class>
+		<title>Image</title>
+		<text-trigger>img</text-trigger>
+		<setup>
+			<action>insert_snippet</action>
+			<syntax-context>html, html punctuation.definition.begin</syntax-context>
+			<options>
+				<dict>
+					<key>default</key>
+					<string><![CDATA[<img src="$1" alt="$2"$E_XHTML>$0]]></string>
 				</dict>
 			</options>
 		</setup>
