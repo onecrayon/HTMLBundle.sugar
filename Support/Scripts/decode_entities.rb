@@ -2,7 +2,7 @@
 $KCODE = 'U'
 
 $entity_to_char = { }
-File.open("#{ENV['E_SUGARPATH']}/Support/entities.txt").read.scan(/^(\d+)\t(.+)$/) do |key, value|
+File.open("#{ENV['E_SUGARPATH']}/Support/Resources/entities.txt").read.scan(/^(\d+)\t(.+)$/) do |key, value|
   $entity_to_char[value] = [key.to_i].pack('U')
 end
 
