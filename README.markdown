@@ -13,7 +13,7 @@ The HTMLBundle.sugar adds the majority of the actions and snippets from the defa
 
 ### Installation
 
-**As of 1.0.1 this sugar requires TEA 1.0b17 or higher; please make sure to upgrade your version of TEA as Espresso 1.0.5 ships with 1.0b12**
+**As of 1.0.1 this sugar requires TEA 1.0b18 or higher; please make sure to upgrade your version of TEA as Espresso 1.0.5 ships with 1.0b12**
 
 If you have git installed, run the following commands to install HTMLBundle.sugar:
 
@@ -26,6 +26,6 @@ Otherwise, visit the [Downloads tab](http://github.com/onecrayon/HTMLBundle.suga
 
 ### Errata
 
-HTMLBundle.sugar actions and snippets are all powered by TEA for Espresso.  **This sugar requires TEA 1.0b17 or higher** (the default version of TEA bundled with Espresso 1.0.5 is TEA 1.0b12).
+HTMLBundle.sugar actions and snippets are all powered by TEA for Espresso.  **This sugar requires TEA 1.0b18 or higher** (the default version of TEA bundled with Espresso 1.0.5 is TEA 1.0b12).
 
-If you have any requests or stumble across any bugs (after upgrading to TEA 1.0b17+), please feel free to [file an issue](http://github.com/onecrayon/HTMLBundle.sugar/issues)!
+If you have any requests or stumble across any bugs (after upgrading to TEA 1.0b18+), please feel free to [file an issue](http://github.com/onecrayon/HTMLBundle.sugar/issues)!
