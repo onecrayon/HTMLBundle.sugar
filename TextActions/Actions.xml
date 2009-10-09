@@ -13,6 +13,18 @@
 		</setup>
 	</action>
 	
+	<action id="com.onecrayon.TextActions.CharsToNumericEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
+		<class>TEALoader</class>
+		<title>Characters To Numeric Entities</title>
+		<setup>
+			<script>encode_characters.rb</script>
+			<input>selection</input>
+			<alternate>word</alternate>
+			<output>text</output>
+			<undo_name>Encode All Characters</undo_name>
+		</setup>
+	</action>
+	
 	<action id="com.onecrayon.TextActions.EncryptROT13" category="actions.text.HTML/tea.conversion">
 		<class>TEALoader</class>
 		<title>Encrypt Selection / Line (ROT 13)</title>
