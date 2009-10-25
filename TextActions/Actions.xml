@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <action-recipes>
 	
+	<action id="com.onecrayon.TextActions.BalanceTag" category="actions.text.HTML/actions.text.generic">
+		<class>TEAforEspresso</class>
+		<title>Balance Tag</title>
+		<key-equivalent>control option b</key-equivalent>
+		<setup>
+			<action>balance</action>
+			<options>
+				<dict>
+					<key>mode</key>
+					<string>zen</string>
+				</dict>
+			</options>
+		</setup>
+	</action>
+	
 	<action id="com.onecrayon.TextActions.DecodeEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
 		<class>TEALoader</class>
 		<title>Decode Entities in Selection / Line</title>
