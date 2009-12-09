@@ -5,7 +5,7 @@
 		<description>Actions and snippets from Textmate's default HTML Bundle, ported to Espresso</description>
 		<author>Ian Beck</author>
 		<identifier>com.onecrayon.Sugar.HTMLBundle</identifier>
-		<version status="release">1.0.3</version>
+		<version status="release">1.0.4</version>
 		<download format="git">git://github.com/onecrayon/HTMLBundle.sugar.git</download>
 	</meta>
 </settings>
