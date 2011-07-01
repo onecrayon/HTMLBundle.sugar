@@ -1,21 +1,12 @@
 <?xml version="1.0"?>
 <action-recipes>
 
-	<action id="com.onecrayon.Snippets.HTML.base" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.base" category="actions.text.HTML/actions.snippets">
 		<title>Base</title>
 		<text-trigger>base</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<base href="$1"${2: target="$3"}$E_XHTML>$0]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<base href="$1"${2: target="$3"} />$0]]></text>
+	</snippet>
 	
 	<snippet id="com.onecrayon.Snippets.HTML.body" category="actions.text.HTML/actions.snippets">
 		<title>Body</title>
@@ -42,31 +33,22 @@
 </div>]]></text>
 	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.movie" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.movie" category="actions.text.HTML/actions.snippets">
 		<title>Embed QT Movie</title>
 		<text-trigger>movie</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-	<param name="src" value="$1"$E_XHTML>
-	<param name="controller" value="$4"$E_XHTML>
-	<param name="autoplay" value="$5"$E_XHTML>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+	<param name="src" value="$1" />
+	<param name="controller" value="$4" />
+	<param name="autoplay" value="$5" />
 	<embed src="${1:movie.mov}"
 		width="${2:320}" height="${3:240}"
 		controller="${4:true}" autoplay="${5:true}"
 		scale="tofit" cache="true"
 		pluginspage="http://www.apple.com/quicktime/download/"
-	$E_XHTML>
-</object>]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+	/>
+</object>]]></text>
+	</snippet>
 	
 	<snippet id="com.onecrayon.Snippets.HTML.fieldset" category="actions.text.HTML/actions.snippets">
 		<title>Fieldset</title>
@@ -79,45 +61,27 @@
 </fieldset>]]></text>
 	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.form" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.form" category="actions.text.HTML/actions.snippets">
 		<title>Form</title>
 		<text-trigger>form</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<form action="$1" method="${2:get}" accept-charset="utf-8">
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<form action="$1" method="${2:get}" accept-charset="utf-8">
 	$0
 
-	<p><input type="submit" value="Continue &rarr;"$E_XHTML></p>
-</form>]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+	<p><input type="submit" value="Continue &rarr;" /></p>
+</form>]]></text>
+	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.head" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.head" category="actions.text.HTML/actions.snippets">
 		<title>Head</title>
 		<text-trigger>head</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8"$E_XHTML>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title>$1</title>
 	$2
-</head>$0]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+</head>$0]]></text>
+	</snippet>
 	
 	<snippet id="com.onecrayon.Snippets.HTML.heading" category="actions.text.HTML/actions.snippets">
 		<title>Heading</title>
@@ -133,54 +97,27 @@
 		<text><![CDATA[<iframe src="$1"${2: frameborder="0"}>$3</iframe>$0]]></text>
 	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.Input" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.Input" category="actions.text.HTML/actions.snippets">
 		<title>Input</title>
 		<text-trigger>input</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3"${4: id="${5:$2}"}$E_XHTML>]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3"${4: id="${5:$2}"} />]]></text>
+	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.labelWithInput" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.labelWithInput" category="actions.text.HTML/actions.snippets">
 		<title>Label With Input</title>
 		<text-trigger>label</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<label for="${2:${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}}">$1</label>
-<input type="${3:text/submit/hidden/button}" name="${4:$2}" value="$5"${6: id="${7:$2}"}$E_XHTML>]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<label for="${2:${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}}">$1</label>
+<input type="${3:text/submit/hidden/button}" name="${4:$2}" value="$5"${6: id="${7:$2}"} />]]></text>
+	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.Image" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.Image" category="actions.text.HTML/actions.snippets">
 		<title>Image</title>
 		<text-trigger>img</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<img src="$1" alt="$2"$E_XHTML>$0]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<img src="$1" alt="$2" />$0]]></text>
+	</snippet>
 	
 	<snippet id="com.onecrayon.Snippets.HTML.label" category="actions.text.HTML/actions.snippets">
 		<title>Label</title>
@@ -188,21 +125,12 @@
 		<text><![CDATA[<label${1: for="$2"}>$3</label>$0]]></text>
 	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.link" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.link" category="actions.text.HTML/actions.snippets">
 		<title>Link</title>
 		<text-trigger>link</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}"${4: title="${5:no title}"} charset="${6:utf-8}"$E_XHTML>]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}"${4: title="${5:no title}"} charset="${6:utf-8}" />]]></text>
+	</snippet>
 	
 	<snippet id="com.onecrayon.Snippets.HTML.mail_anchor" category="actions.text.HTML/actions.snippets">
 		<title>Mail Anchor</title>
@@ -211,21 +139,12 @@
 		<text><![CDATA[<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>$0]]></text>
 	</snippet>
 	
-	<action id="com.onecrayon.Snippets.HTML.meta" category="actions.text.HTML/actions.snippets">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.Snippets.HTML.meta" category="actions.text.HTML/actions.snippets">
 		<title>Meta</title>
 		<text-trigger>meta</text-trigger>
-		<setup>
-			<action>insert_snippet</action>
-			<syntax-context>html, html punctuation.definition.begin</syntax-context>
-			<options>
-				<dict>
-					<key>default</key>
-					<string><![CDATA[<meta name="${1:name}" content="${2:content}"$E_XHTML>]]></string>
-				</dict>
-			</options>
-		</setup>
-	</action>
+		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<text><![CDATA[<meta name="${1:name}" content="${2:content}" />]]></text>
+	</snippet>
 	
 	<snippet id="com.onecrayon.Snippets.HTML.refresh" category="actions.text.HTML/actions.snippets">
 		<title>Meta Refresh</title>

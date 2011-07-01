@@ -1,21 +1,6 @@
 <?xml version="1.0"?>
 <action-recipes>
 	
-	<action id="com.onecrayon.TextActions.BalanceTag" category="actions.text.HTML/actions.text.generic">
-		<class>TEAforEspresso</class>
-		<title>Balance Tag</title>
-		<key-equivalent>control option b</key-equivalent>
-		<setup>
-			<action>balance</action>
-			<options>
-				<dict>
-					<key>mode</key>
-					<string>zen</string>
-				</dict>
-			</options>
-		</setup>
-	</action>
-	
 	<action id="com.onecrayon.TextActions.DecodeEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
 		<class>TEALoader</class>
 		<title>Decode Entities in Selection / Line</title>
@@ -76,22 +61,10 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
-		<class>TEAforEspresso</class>
+	<snippet id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
 		<title>Wrap In &lt;?= ... ?></title>
-		<setup>
-			<action>insert_snippet</action>
-			<options>
-			    <dict>
-			        <key>default</key>
-			        <string>&lt;?= $SELECTED_TEXT ?></string>
-			        
-			        <key>undo_name</key>
-			        <string>Wrap In PHP Echo</string>
-			    </dict>
-			</options>
-		</setup>
-	</action>
+		<text>&lt;?= ${EDITOR_SELECTION:$0} ?></text>
+	</snippet>
 	
 	<action id="com.onecrayon.TextActions.StripHTML" category="actions.text.HTML/tea.footer">
 		<class>TEALoader</class>
