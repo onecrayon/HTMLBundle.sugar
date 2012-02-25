@@ -2,90 +2,84 @@
 <action-recipes>
 	
 	<action id="com.onecrayon.TextActions.DecodeEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
-		<class>TEALoader</class>
+		<class>OCShellAction</class>
 		<title>Decode Entities in Selection / Line</title>
 		<setup>
 			<script>decode_entities.rb</script>
 			<input>selection</input>
 			<alternate>line</alternate>
-			<output>text</output>
-			<undo_name>Decode Entities</undo_name>
 		</setup>
 	</action>
 	
 	<action id="com.onecrayon.TextActions.CharsToNumericEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
-		<class>TEALoader</class>
+		<class>OCShellAction</class>
 		<title>Characters To Numeric Entities</title>
 		<setup>
 			<script>encode_characters.rb</script>
 			<input>selection</input>
 			<alternate>word</alternate>
-			<output>text</output>
-			<undo_name>Encode All Characters</undo_name>
 		</setup>
 	</action>
 	
 	<action id="com.onecrayon.TextActions.EncryptROT13" category="actions.text.HTML/tea.conversion">
-		<class>TEALoader</class>
+		<class>OCShellAction</class>
 		<title>Encrypt Selection / Line (ROT 13)</title>
 		<setup>
 			<script>encrypt_selection.rb</script>
 			<input>selection</input>
 			<alternate>line</alternate>
-			<output>text</output>
-			<undo_name>Encrypt (ROT 13)</undo_name>
 		</setup>
 	</action>
 	
 	<action id="com.onecrayon.TextActions.URLEscape" category="actions.text.HTML/tea.conversion">
-		<class>TEALoader</class>
+		<class>OCShellAction</class>
 		<title>URL Escape Selection / Line</title>
 		<setup>
 			<script>url_escape.rb</script>
 			<input>selection</input>
 			<alternate>line</alternate>
-			<output>text</output>
-			<undo_name>URL Escape</undo_name>
 		</setup>
 	</action>
 	
 	<action id="com.onecrayon.TextActions.URLUnescape" category="actions.text.HTML/tea.conversion">
-		<class>TEALoader</class>
+		<class>OCShellAction</class>
 		<title>URL Unescape Selection / Line</title>
 		<setup>
 			<script>url_unescape.rb</script>
 			<input>selection</input>
 			<alternate>line</alternate>
-			<output>text</output>
-			<undo_name>URL Unescape</undo_name>
 		</setup>
 	</action>
 	
-	<snippet id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
+	<action id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
+		<class>OCShellAction</class>
 		<title>Wrap In &lt;?= ... ?></title>
-		<text>&lt;?= ${EDITOR_SELECTION:$0} ?></text>
-	</snippet>
+		<setup>
+			<script>wrap_php_echo.rb</script>
+			<input>selection</input>
+			<alternate>word</alternate>
+		</setup>
+	</action>
 	
 	<action id="com.onecrayon.TextActions.StripHTML" category="actions.text.HTML/tea.footer">
-		<class>TEALoader</class>
+		<class>OCShellAction</class>
 		<title>Strip HTML From Document / Selection</title>
 		<setup>
 			<script>strip_tags.sh</script>
 			<input>selection</input>
 			<alternate>document</alternate>
-			<output>text</output>
-			<undo_name>Strip HTML</undo_name>
 		</setup>
 	</action>
 	
+	<!-- TODO: figure out if I can make this work again
 	<action id="com.onecrayon.TextActions.UpdateImage" category="actions.text.HTML">
 		<class>TEAforEspresso</class>
 		<title>Update &lt;img&gt; Size</title>
 		<key-equivalent>control i</key-equivalent>
 		<setup>
-			<action>image_size</action>
-			<!-- <selection-context>one</selection-context> -->
+			<script>image_size</script>
+			<input>selection</input>
 		</setup>
-	</action>
+	</action>-->
 	
 </action-recipes>
