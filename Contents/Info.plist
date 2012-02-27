@@ -18,5 +18,11 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.2.0</string>
+	<key>MREspressoMinVersion</key>
+	<string>2.0.0</string>
+	<key>MRSugarDependencies</key>
+	<array>
+		<string>com.onecrayon.sugar.shellactions</string>
+	</array>
 </dict>
 </plist>
