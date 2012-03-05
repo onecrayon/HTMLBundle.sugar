@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <action-recipes>
 	
-	<action id="com.onecrayon.TextActions.DecodeEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
+	<action id="com.onecrayon.sugar.htmlbundle.decode-entities" category="actions.htmlbundle/tea.conversion/">
 		<class>OCShellAction</class>
-		<title>Decode Entities in Selection / Line</title>
 		<setup>
 			<script>decode_entities.rb</script>
 			<input>selection</input>
@@ -11,9 +10,8 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.CharsToNumericEntities" category="actions.text.HTML/actions.text.entities/tea.conversion">
+	<action id="com.onecrayon.sugar.htmlbundle.chars-to-numeric-entities" category="actions.htmlbundle/tea.conversion">
 		<class>OCShellAction</class>
-		<title>Characters To Numeric Entities</title>
 		<setup>
 			<script>encode_characters.rb</script>
 			<input>selection</input>
@@ -21,9 +19,8 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.EncryptROT13" category="actions.text.HTML/tea.conversion">
+	<action id="com.onecrayon.sugar.htmlbundle.encrypt-rot13" category="actions.htmlbundle/tea.conversion">
 		<class>OCShellAction</class>
-		<title>Encrypt Selection / Line (ROT 13)</title>
 		<setup>
 			<script>encrypt_selection.rb</script>
 			<input>selection</input>
@@ -31,9 +28,8 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.URLEscape" category="actions.text.HTML/tea.conversion">
+	<action id="com.onecrayon.sugar.htmlbundle.url-escape" category="actions.htmlbundle/tea.conversion">
 		<class>OCShellAction</class>
-		<title>URL Escape Selection / Line</title>
 		<setup>
 			<script>url_escape.rb</script>
 			<input>selection</input>
@@ -41,9 +37,8 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.URLUnescape" category="actions.text.HTML/tea.conversion">
+	<action id="com.onecrayon.sugar.htmlbundle.url-unescape" category="actions.htmlbundle/tea.conversion">
 		<class>OCShellAction</class>
-		<title>URL Unescape Selection / Line</title>
 		<setup>
 			<script>url_unescape.rb</script>
 			<input>selection</input>
@@ -51,9 +46,8 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.WrapInPHPEcho" category="actions.text.HTML/tea.wrapping">
+	<action id="com.onecrayon.sugar.htmlbundle.wrap-in-php-echo" category="actions.htmlbundle/tea.wrapping">
 		<class>OCShellAction</class>
-		<title>Wrap In &lt;?= ... ?></title>
 		<setup>
 			<script>wrap_php_echo.rb</script>
 			<input>selection</input>
@@ -61,18 +55,26 @@
 		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.StripHTML" category="actions.text.HTML/tea.footer">
+	<action id="com.onecrayon.sugar.htmlbundle.strip-html" category="actions.htmlbundle/tea.footer">
 		<class>OCShellAction</class>
-		<title>Strip HTML From Document / Selection</title>
 		<setup>
 			<script>strip_tags.sh</script>
 			<input>selection</input>
 			<alternate>document</alternate>
 		</setup>
 	</action>
+
+	<action id="com.onecrayon.sugar.htmlbundle.validate-html" category="actions.htmlbundle/tea.footer">
+		<class>OCShellAction</class>
+		<setup>
+			<script>validate_html.rb</script>
+			<input>document</input>
+			<output>html</output>
+		</setup>
+	</action>
 	
 	<!-- TODO: figure out if I can make this work again
-	<action id="com.onecrayon.TextActions.UpdateImage" category="actions.text.HTML">
+	<action id="com.onecrayon.sugar.htmlbundle.UpdateImage" category="actions.text.HTML">
 		<class>TEAforEspresso</class>
 		<title>Update &lt;img&gt; Size</title>
 		<key-equivalent>control i</key-equivalent>
