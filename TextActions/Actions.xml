@@ -52,6 +52,7 @@
 			<script>wrap_php_echo.rb</script>
 			<input>selection</input>
 			<alternate>word</alternate>
+			<output-format>snippet</output-format>
 		</setup>
 	</action>
 	

@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-print '<?= ' + STDIN.read.strip + ' ?>'
+print '<?= ${1:' + STDIN.read.strip.gsub(/(\$|\{|\}|\\|`)/){ "\\#{$1}" } + '} ?>'
