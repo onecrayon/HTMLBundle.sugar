@@ -74,15 +74,13 @@
 		</setup>
 	</action>
 	
-	<!-- TODO: figure out if I can make this work again
-	<action id="com.onecrayon.sugar.htmlbundle.UpdateImage" category="actions.text.HTML">
-		<class>TEAforEspresso</class>
-		<title>Update &lt;img&gt; Size</title>
-		<key-equivalent>control i</key-equivalent>
+	<action id="com.onecrayon.sugar.htmlbundle.update-image" category="actions.htmlbundle/tea.wrapping">
+		<class>OCShellAction</class>
 		<setup>
-			<script>image_size</script>
+			<script>image_size.py</script>
 			<input>selection</input>
+			<alternate>line</alternate>
 		</setup>
-	</action>-->
+	</action>
 	
 </action-recipes>

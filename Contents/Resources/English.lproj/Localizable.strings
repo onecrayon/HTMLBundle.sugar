@@ -5,6 +5,7 @@
 "com.onecrayon.sugar.htmlbundle.encrypt-rot13.title" = "Encrypt Selection / Line (ROT 13)";
 "com.onecrayon.sugar.htmlbundle.url-escape.title" = "URL Escape Selection / Line";
 "com.onecrayon.sugar.htmlbundle.url-unescape.title" = "URL Unescape Selection / Line";
+"com.onecrayon.sugar.htmlbundle.update-image.title" = "Update <img> Size";
 "com.onecrayon.sugar.htmlbundle.wrap-in-php-echo.title" = "Wrap In <?= ... ?>";
 "com.onecrayon.sugar.htmlbundle.strip-html.title" = "Strip HTML From Document / Selection";
 "com.onecrayon.sugar.htmlbundle.validate-html.title" = "Validate Document (W3C)";
