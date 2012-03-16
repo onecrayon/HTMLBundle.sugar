@@ -4,14 +4,14 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.base" category="actions.htmlbundle/actions.snippets">
 		<title>Base</title>
 		<text-trigger>base</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<base href="$1"${2: target="$3"} />$0]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.body" category="actions.htmlbundle/actions.snippets">
 		<title>Body</title>
 		<text-trigger>body</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<body${1: id="$2"${3: onload="$4"}}>
 	$0
 </body>]]></text>
@@ -20,14 +20,14 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.button" category="actions.htmlbundle/actions.snippets">
 		<title>Button</title>
 		<text-trigger>button</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<button${1: type="${2:submit/reset/button}"}>$0</button>]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.div" category="actions.htmlbundle/actions.snippets">
 		<title>Div</title>
 		<text-trigger>div</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<div${1: id="${2:name}"}>
 	${0:$EDITOR_SELECTION}
 </div>]]></text>
@@ -36,7 +36,7 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.movie" category="actions.htmlbundle/actions.snippets">
 		<title>Embed QT Movie</title>
 		<text-trigger>movie</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
 	<param name="src" value="$1" />
 	<param name="controller" value="$4" />
@@ -53,7 +53,7 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.fieldset" category="actions.htmlbundle/actions.snippets">
 		<title>Fieldset</title>
 		<text-trigger>fieldset</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<fieldset id="${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}" ${2:class="${3:}"}>
 	<legend>${1:$EDITOR_SELECTION}</legend>
 	
@@ -64,7 +64,7 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.form" category="actions.htmlbundle/actions.snippets">
 		<title>Form</title>
 		<text-trigger>form</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<form action="$1" method="${2:get}" accept-charset="utf-8">
 	$0
 
@@ -75,7 +75,7 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.head" category="actions.htmlbundle/actions.snippets">
 		<title>Head</title>
 		<text-trigger>head</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<title>$1</title>
@@ -86,28 +86,28 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.heading" category="actions.htmlbundle/actions.snippets">
 		<title>Heading</title>
 		<text-trigger>h1</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<h1 id="${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}">${1:$EDITOR_SELECTION}</h1>]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.iframe" category="actions.htmlbundle/actions.snippets">
 		<title>Iframe</title>
 		<text-trigger>iframe</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<iframe src="$1"${2: frameborder="0"}>$3</iframe>$0]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.Input" category="actions.htmlbundle/actions.snippets">
 		<title>Input</title>
 		<text-trigger>input</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="$3"${4: id="${5:$2}"} />]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.labelWithInput" category="actions.htmlbundle/actions.snippets">
 		<title>Label With Input</title>
 		<text-trigger>label</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<label for="${2:${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g}}">$1</label>
 <input type="${3:text/submit/hidden/button}" name="${4:$2}" value="$5"${6: id="${7:$2}"} />]]></text>
 	</snippet>
@@ -115,62 +115,62 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.Image" category="actions.htmlbundle/actions.snippets">
 		<title>Image</title>
 		<text-trigger>img</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<img src="$1" alt="$2" />$0]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.label" category="actions.htmlbundle/actions.snippets">
 		<title>Label</title>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<label${1: for="$2"}>$3</label>$0]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.link" category="actions.htmlbundle/actions.snippets">
 		<title>Link</title>
 		<text-trigger>link</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<link rel="${1:stylesheet}" href="${2:/css/master.css}" type="text/css" media="${3:screen}"${4: title="${5:no title}"} charset="${6:utf-8}" />]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.mail_anchor" category="actions.htmlbundle/actions.snippets">
 		<title>Mail Anchor</title>
 		<text-trigger>mailto</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${3:email me}</a>$0]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.meta" category="actions.htmlbundle/actions.snippets">
 		<title>Meta</title>
 		<text-trigger>meta</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<meta name="${1:name}" content="${2:content}" />]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.refresh" category="actions.htmlbundle/actions.snippets">
 		<title>Meta Refresh</title>
 		<text-trigger>refresh</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<meta http-equiv="refresh" content="0; url=$1"$TM_XHTML>$0]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.option" category="actions.htmlbundle/actions.snippets">
 		<title>Option</title>
 		<text-trigger>opt</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<option${1: value="${2:option}"}>${3:$2}</option>]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.script" category="actions.htmlbundle/actions.snippets">
 		<title>Script</title>
 		<text-trigger>script</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<script type="text/javascript" charset="utf-8"${1: src="$2"}>$0</script>]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.select" category="actions.htmlbundle/actions.snippets">
 		<title>Select</title>
 		<text-trigger>select</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<select name="${1:some_name}" id="${2:$1}"${3: size="${4:1}"}>
 	<option${5: value="${6:option1}"}>${7:$6}</option>
 	<option${8: value="${9:option2}"}>${10:$9}</option>
@@ -181,7 +181,7 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.style" category="actions.htmlbundle/actions.snippets">
 		<title>Style</title>
 		<text-trigger>style</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<style type="text/css" media="screen">
 	$0
 </style>]]></text>
@@ -190,7 +190,7 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.table" category="actions.htmlbundle/actions.snippets">
 		<title>Table</title>
 		<text-trigger>table</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<table border="${1:0}"${2: cellspacing="${3:5}" cellpadding="${4:5}"}>
 	<tr><th>${5:Header}</th></tr>
 	<tr><td>${0:Data}</td></tr>
@@ -200,14 +200,14 @@
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.textarea" category="actions.htmlbundle/actions.snippets">
 		<title>Textarea</title>
 		<text-trigger>textarea</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<textarea name="${1:name}" rows="${2:8}" cols="${3:40}">$0</textarea>]]></text>
 	</snippet>
 	
 	<snippet id="com.onecrayon.sugar.htmlbundle.snippets.title" category="actions.htmlbundle/actions.snippets">
 		<title>Title</title>
 		<text-trigger>title</text-trigger>
-		<syntax-context>html, html punctuation.definition.begin</syntax-context>
+		<syntax-context>html, html punctuation.definition.begin, xml, xml punctuation.definition.begin</syntax-context>
 		<text><![CDATA[<title>${1:Page Title}</title>]]></text>
 	</snippet>
 	
