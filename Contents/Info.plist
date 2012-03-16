@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>MREspressoMinVersion</key>
 	<string>2.0.0</string>
 	<key>MRSugarDependencies</key>
